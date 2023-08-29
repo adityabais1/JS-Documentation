@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@600&family=PT+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+}
+body{
+    background-color: none;
+}
+.header{
+    width: 275px;
+    height: 100vh;
+    position: fixed;
+    color: white;
+}
+.content{
+    /* width: calc(100vw - 292px); */
+    width: calc(100% - 275px);
+    /* background-color: aqua; */
+    position: relative;
+    top: 0;
+    left: 275px;
+    padding: 10px 40px;
+    border-left: 5px solid rgb(255, 237, 203) ;
+    background-color: #fffff3;
+    /* font-size: 14px; */
+    color: rgb(53, 53, 53);
+}
+
+
+
+/* header styling */
+
+.js-documentation{
+    width: 100%;
+    font-size: 28px;
+    /* background-color: red; */
+    height: 15%;
+    line-height: 100px;
+    text-align: center;
+    background-color: #010175;
+    font-family: 'DM Serif Display', serif;
+}
+
+.nav-bar{
+    /* padding: 10px 0; */
+    overflow-y: scroll;
+    height: 85%;
+}
+.nav-bar > ul > li{
+    list-style: none;
+    height: 50px;
+    border-top: 1px solid rgb(34, 34, 34);
+    line-height: 50px;
+}
+.nav-bar> ul> li> a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    display: block;
+    height: 100%;
+    padding: 0 10px 0 10px ;
+    background-color: #d4eaf0;
+    font-weight: 600;
+    font-family: 'Domine', serif;
+}
+
+
+
+/* Main - content */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+h2{
+    font-weight: normal;
+    margin: 40px 0px 15px 0;
+    background-image: linear-gradient(90deg,#edf0ff, #010175) ;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+.content >section > p{
+    margin: 20px 20px;
+    line-height: 25px;
+}
+.content> section> ul> li{
+    margin: 20px 50px;
+    line-height: 25px;
+}
+.inside-li{
+    margin: 20px 50px 20px 100px;
+    /* display: block; */
+}
+code{
+    margin: 20px 20px; 
+    background-color: rgb(58, 58, 58);
+    color: white;
+    padding: 20px;
+    width: 90%;
+    display: block;
+    line-height: 25px;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+    /* border: 3px solid rgb(166, 18, 18); */
+}
+
+
+
+/* hovers */
+.nav-bar> ul> li> a:hover{
+    background-color: #C5FAD5;
+    color: #B85042;
+    text-align: center;
+    /* padding: 0 10px 0 13px ; */
+}
+
+
+/* media queries */
+@media(max-width: 780px){
+    .header{
+        position: static;
+        width: 100%;
+        height: 40vh;
+        /* height: 4; */
+        /* height: 00px; */
+    }
+    .content{
+        position: static;
+        width: 100%;
+        padding: 0px 10px;
+        margin-top: -80px;
+    }
+    .js-documentation{
+        height: 100px;
+        text-align: left;
+        padding-left: 20px;
+        position: fixed;
+        top: 0;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.641);
+    }
+    .nav-bar{
+        height: calc(40vh - 100px);
+        margin-top: 100px;
+    }
+}
